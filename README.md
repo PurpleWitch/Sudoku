@@ -4,7 +4,7 @@ ok!
 
 ## Init Tech Stack
 
-- mongo
+- mongoDB
 - meteor
 - typescript-angular
 - nodejs
