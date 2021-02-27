@@ -8,3 +8,7 @@ ok!
 - meteor
 - typescript-angular
 - nodejs
+
+## Team ##
+- Rami Okkeh
+- Hamdallah Fatayer
