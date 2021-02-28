@@ -1,5 +1,5 @@
 {
-  "name": "Sudoku2",
+  "name": "sudoku",
   "private": true,
   "scripts": {
     "start": "meteor run",

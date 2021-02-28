@@ -1,13 +1,12 @@
 # Sudoku
-
 ok!
 
 ## Init Tech Stack
 
-- mongoDB
-- meteor
-- typescript-angular
-- nodejs
+- mongoDB-atlas
+- php-laravel
+- meteor-typescript-angular
+- node.js
 
 ## Team ##
 - Rami Okkeh
