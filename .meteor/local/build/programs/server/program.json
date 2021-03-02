@@ -202,9 +202,6 @@
       "path": "packages/mongo.js"
     },
     {
-      "path": "packages/blaze-html-templates.js"
-    },
-    {
       "path": "packages/jquery.js"
     },
     {
@@ -229,6 +226,9 @@
       "path": "packages/shell-server.js"
     },
     {
+      "path": "packages/angular-templates.js"
+    },
+    {
       "path": "packages/livedata.js"
     },
     {
@@ -236,34 +236,6 @@
     },
     {
       "path": "packages/launch-screen.js"
-    },
-    {
-      "path": "packages/observe-sequence.js"
-    },
-    {
-      "path": "packages/deps.js"
-    },
-    {
-      "path": "packages/htmljs.js"
-    },
-    {
-      "sourceMap": "packages/blaze.js.map",
-      "path": "packages/blaze.js"
-    },
-    {
-      "path": "packages/ui.js"
-    },
-    {
-      "path": "packages/spacebars.js"
-    },
-    {
-      "path": "packages/templating-compiler.js"
-    },
-    {
-      "path": "packages/templating-runtime.js"
-    },
-    {
-      "path": "packages/templating.js"
     },
     {
       "sourceMap": "packages/autoupdate.js.map",

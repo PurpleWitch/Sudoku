@@ -15,12 +15,7 @@ main = Package.webapp.main;
 DDP = Package['ddp-client'].DDP;
 DDPServer = Package['ddp-server'].DDPServer;
 LaunchScreen = Package['launch-screen'].LaunchScreen;
-Blaze = Package.ui.Blaze;
-UI = Package.ui.UI;
-Handlebars = Package.ui.Handlebars;
-Spacebars = Package.spacebars.Spacebars;
 meteorInstall = Package.modules.meteorInstall;
 Promise = Package.promise.Promise;
 Autoupdate = Package.autoupdate.Autoupdate;
-HTML = Package.htmljs.HTML;
 

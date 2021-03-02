@@ -12,14 +12,8 @@ meteorEnv = Package.meteor.meteorEnv;
 WebApp = Package.webapp.WebApp;
 DDP = Package['ddp-client'].DDP;
 LaunchScreen = Package['launch-screen'].LaunchScreen;
-Blaze = Package.ui.Blaze;
-UI = Package.ui.UI;
-Handlebars = Package.ui.Handlebars;
-Spacebars = Package.spacebars.Spacebars;
-Template = Package['templating-runtime'].Template;
 meteorInstall = Package.modules.meteorInstall;
 Promise = Package.promise.Promise;
 Autoupdate = Package.autoupdate.Autoupdate;
 Reload = Package.reload.Reload;
-HTML = Package.htmljs.HTML;
 

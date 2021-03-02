@@ -20,8 +20,7 @@ Meteor.startup(() => {// code to run on server at startup
 }}},{
   "extensions": [
     ".js",
-    ".json",
-    ".mjs"
+    ".json"
   ]
 });
 

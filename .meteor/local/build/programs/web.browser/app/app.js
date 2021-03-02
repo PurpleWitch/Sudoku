@@ -1,94 +1,126 @@
-var require = meteorInstall({"client":{"main.html":function module(require,exports,module){
+var require = meteorInstall({"client":{"imports":{"components":{"todosList":{"todosList.html":function module(require,exports,module){
 
-///////////////////////////////////////////////////////////////////////
-//                                                                   //
-// client/main.html                                                  //
-//                                                                   //
-///////////////////////////////////////////////////////////////////////
-                                                                     //
-module.link("./template.main.js", { "*": "*+" });
+////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                            //
+// client/imports/components/todosList/todosList.html                                         //
+//                                                                                            //
+////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                              //
+module.link("./template.todosList.js", { "*": "*+" });
 
-///////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////
 
-},"template.main.js":function module(){
+},"template.todosList.js":function module(require,exports,module){
 
-///////////////////////////////////////////////////////////////////////
-//                                                                   //
-// client/template.main.js                                           //
-//                                                                   //
-///////////////////////////////////////////////////////////////////////
-                                                                     //
+////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                            //
+// client/imports/components/todosList/template.todosList.js                                  //
+//                                                                                            //
+////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                              //
 
-Template.body.addContent((function() {
-  var view = this;
-  return [ HTML.Raw("<h1>Welcome to Meteor!</h1>\n\n  "), Spacebars.include(view.lookupTemplate("hello")), "\n  ", Spacebars.include(view.lookupTemplate("info")) ];
-}));
-Meteor.startup(Template.body.renderToDocument);
+  var templateUrl = "client/imports/components/todosList/todosList.html";
+  angular.module('angular-templates')
+    .run(['$templateCache', function($templateCache) {
+      $templateCache.put(templateUrl, "<header> <h1>Todo List</h1> </header> <ul> <li ng-repeat=\"task in $ctrl.tasks\">{{task.text}}</li> </ul>");
+    }]);
+  if (typeof exports !== 'undefined') {
+    exports.__esModule = true;
+    exports.default = templateUrl;
+  }
+  
+////////////////////////////////////////////////////////////////////////////////////////////////
 
-Template.__checkName("hello");
-Template["hello"] = new Template("Template.hello", (function() {
-  var view = this;
-  return [ HTML.Raw("<button>Click Me</button>\n  "), HTML.P("You've pressed the button ", Blaze.View("lookup:counter", function() {
-    return Spacebars.mustache(view.lookup("counter"));
-  }), " times.") ];
-}));
+},"todosList.js":function module(require,exports,module){
 
-Template.__checkName("info");
-Template["info"] = new Template("Template.info", (function() {
-  var view = this;
-  return HTML.Raw('<h2>Learn Meteor!</h2>\n  <ul>\n    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>\n    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>\n    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>\n    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>\n  </ul>');
-}));
+////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                            //
+// client/imports/components/todosList/todosList.js                                           //
+//                                                                                            //
+////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                              //
+!function (module1) {
+  let angular;
+  module1.link("angular", {
+    default(v) {
+      angular = v;
+    }
 
-///////////////////////////////////////////////////////////////////////
+  }, 0);
+  let angularMeteor;
+  module1.link("angular-meteor", {
+    default(v) {
+      angularMeteor = v;
+    }
 
-},"main.js":function module(require,exports,module){
+  }, 1);
+  let template;
+  module1.link("./todosList.html", {
+    default(v) {
+      template = v;
+    }
 
-///////////////////////////////////////////////////////////////////////
-//                                                                   //
-// client/main.js                                                    //
-//                                                                   //
-///////////////////////////////////////////////////////////////////////
-                                                                     //
-let Template;
-module.link("meteor/templating", {
-  Template(v) {
-    Template = v;
+  }, 2);
+
+  class TodosListCtrl {
+    constructor() {
+      this.tasks = [{
+        text: "This is task 1"
+      }, {
+        text: "This is task 2"
+      }, {
+        text: "This is task 3"
+      }];
+    }
+
   }
 
-}, 0);
-let ReactiveVar;
-module.link("meteor/reactive-var", {
-  ReactiveVar(v) {
-    ReactiveVar = v;
-  }
+  module1.exportDefault(angular.module("todosList", [angularMeteor]).component("todosList", {
+    templateUrl: template,
+    controller: TodosListCtrl
+  }));
+}.call(this, module);
+////////////////////////////////////////////////////////////////////////////////////////////////
 
-}, 1);
-module.link("./main.html");
-Template.hello.onCreated(function helloOnCreated() {
-  // counter starts at 0
-  this.counter = new ReactiveVar(0);
-});
-Template.hello.helpers({
-  counter() {
-    return Template.instance().counter.get();
-  }
+}}}},"main.js":function module(require,exports,module){
 
-});
-Template.hello.events({
-  'click button'(event, instance) {
-    // increment the counter when button is clicked
-    instance.counter.set(instance.counter.get() + 1);
-  }
+////////////////////////////////////////////////////////////////////////////////////////////////
+//                                                                                            //
+// client/main.js                                                                             //
+//                                                                                            //
+////////////////////////////////////////////////////////////////////////////////////////////////
+                                                                                              //
+!function (module1) {
+  let angular;
+  module1.link("angular", {
+    default(v) {
+      angular = v;
+    }
 
-});
-///////////////////////////////////////////////////////////////////////
+  }, 0);
+  let angularMeteor;
+  module1.link("angular-meteor", {
+    default(v) {
+      angularMeteor = v;
+    }
+
+  }, 1);
+  let todosList;
+  module1.link("./imports/components/todosList/todosList", {
+    default(v) {
+      todosList = v;
+    }
+
+  }, 2);
+  angular.module("simple-todos", [angularMeteor, todosList.name]);
+}.call(this, module);
+////////////////////////////////////////////////////////////////////////////////////////////////
 
 }}},{
   "extensions": [
     ".js",
     ".json",
     ".html",
-    ".mjs",
     ".css"
   ]
 });
