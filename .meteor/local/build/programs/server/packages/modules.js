@@ -1002,7 +1002,8 @@ module.useNode();
 }}}}}},{
   "extensions": [
     ".js",
-    ".json"
+    ".json",
+    ".ts"
   ]
 });
 

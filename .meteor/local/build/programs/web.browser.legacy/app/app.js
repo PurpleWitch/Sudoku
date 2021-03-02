@@ -1,23 +1,23 @@
 var require = meteorInstall({"client":{"imports":{"components":{"todosList":{"todosList.html":function module(require,exports,module){
 
-////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                            //
-// client/imports/components/todosList/todosList.html                                         //
-//                                                                                            //
-////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                              //
+////////////////////////////////////////////////////////////////////////////
+//                                                                        //
+// client/imports/components/todosList/todosList.html                     //
+//                                                                        //
+////////////////////////////////////////////////////////////////////////////
+                                                                          //
 module.link("./template.todosList.js", { "*": "*+" });
 
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
 },"template.todosList.js":function module(require,exports,module){
 
-////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                            //
-// client/imports/components/todosList/template.todosList.js                                  //
-//                                                                                            //
-////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                              //
+////////////////////////////////////////////////////////////////////////////
+//                                                                        //
+// client/imports/components/todosList/template.todosList.js              //
+//                                                                        //
+////////////////////////////////////////////////////////////////////////////
+                                                                          //
 
   var templateUrl = "client/imports/components/todosList/todosList.html";
   angular.module('angular-templates')
@@ -29,65 +29,16 @@ module.link("./template.todosList.js", { "*": "*+" });
     exports.default = templateUrl;
   }
   
-////////////////////////////////////////////////////////////////////////////////////////////////
-
-},"todosList.js":function module(require,exports,module){
-
-////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                            //
-// client/imports/components/todosList/todosList.js                                           //
-//                                                                                            //
-////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                              //
-!function (module1) {
-  var angular;
-  module1.link("angular", {
-    "default": function (v) {
-      angular = v;
-    }
-  }, 0);
-  var angularMeteor;
-  module1.link("angular-meteor", {
-    "default": function (v) {
-      angularMeteor = v;
-    }
-  }, 1);
-  var template;
-  module1.link("./todosList.html", {
-    "default": function (v) {
-      template = v;
-    }
-  }, 2);
-
-  var TodosListCtrl = function () {
-    function TodosListCtrl() {
-      this.tasks = [{
-        text: "This is task 1"
-      }, {
-        text: "This is task 2"
-      }, {
-        text: "This is task 3"
-      }];
-    }
-
-    return TodosListCtrl;
-  }();
-
-  module1.exportDefault(angular.module("todosList", [angularMeteor]).component("todosList", {
-    templateUrl: template,
-    controller: TodosListCtrl
-  }));
-}.call(this, module);
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
 }}}},"main.js":function module(require,exports,module){
 
-////////////////////////////////////////////////////////////////////////////////////////////////
-//                                                                                            //
-// client/main.js                                                                             //
-//                                                                                            //
-////////////////////////////////////////////////////////////////////////////////////////////////
-                                                                                              //
+////////////////////////////////////////////////////////////////////////////
+//                                                                        //
+// client/main.js                                                         //
+//                                                                        //
+////////////////////////////////////////////////////////////////////////////
+                                                                          //
 !function (module1) {
   var angular;
   module1.link("angular", {
@@ -109,13 +60,14 @@ module.link("./template.todosList.js", { "*": "*+" });
   }, 2);
   angular.module("simple-todos", [angularMeteor, todosList.name]);
 }.call(this, module);
-////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////
 
 }}},{
   "extensions": [
     ".js",
     ".json",
     ".html",
+    ".ts",
     ".css"
   ]
 });

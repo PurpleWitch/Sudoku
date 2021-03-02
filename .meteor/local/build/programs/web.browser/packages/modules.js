@@ -57868,6 +57868,7 @@ return jQuery;
     ".js",
     ".json",
     ".html",
+    ".ts",
     ".css"
   ]
 });
