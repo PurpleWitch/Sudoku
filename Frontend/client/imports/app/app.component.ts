@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import template from "./app.html";
+var template =  require("./app.html")
  
 @Component({
   selector: 'app',
