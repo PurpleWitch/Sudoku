@@ -17,14 +17,19 @@
       "stripInternal": true,
       "noImplicitAny": false,
       "types": [
-        "@types/underscore",
-        "meteor-typings"
+        "meteor-typings",
+        "@types/underscore"
       ]
     },
     "include": [
       "client/**/*.ts",
       "server/**/*.ts",
-      "imports/**/*.ts"
+      "imports/**/*.ts",
+      "tests/**/*.ts",    
+      "client/**/*.tsx",
+      "server/**/*.tsx",
+      "imports/**/*.tsx",
+      "tests/**/*.tsx"
     ],
     "exclude": [
       "node_modules"

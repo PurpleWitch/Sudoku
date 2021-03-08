@@ -1,19 +1,23 @@
 import { NgModule, ErrorHandler } from '@angular/core';
-import { App } from './app.component';
+import { AppComponent } from './app.component';
 import { BrowserModule } from '@angular/platform-browser';
- 
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
-    App
+    AppComponent
   ],
   entryComponents: [
-    App
+    AppComponent
+  ],
+  bootstrap: [
+    AppComponent
   ],
   providers: [
     { provide: ErrorHandler }
   ],
   imports: [
-    BrowserModule,
+    BrowserModule
   ]
 })
 export class AppModule {}
