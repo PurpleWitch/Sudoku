@@ -17,7 +17,13 @@
     "@angular/platform-browser": "^11.2.3",
     "@angular/platform-browser-dynamic": "^11.2.3",
     "@angular/platform-server": "^11.2.3",
+    "@angular/router": "^11.2.4",
     "@babel/runtime": "^7.11.2",
+    "@ionic/storage": "^2.3.1",
+    "angular-new-router": "github:angular/router",
+    "ionic-angular": "^3.9.10",
+    "ionic-native": "^2.9.0",
+    "ionicons": "^5.5.0",
     "jquery": "^3.5.1",
     "meteor-node-stubs": "^1.0.1",
     "meteor-rxjs": "^0.4.14",
@@ -35,8 +41,9 @@
   "devDependencies": {
     "@types/meteor": "^1.4.67",
     "@types/meteor-accounts-phone": "0.0.6",
+    "@types/mocha": "^8.2.1",
     "@types/underscore": "^1.10.24",
     "meteor-typings": "^1.4.1",
-    "typescript": "^4.2.2"
+    "typescript": "^4.2.3"
   }
 }
