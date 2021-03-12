@@ -1,18 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { Grid } from './ui/Grid/grid.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 @NgModule({
   bootstrap: [
-    AppComponent
+    AppComponent,
+    Grid
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    Grid
   ],
   entryComponents: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
