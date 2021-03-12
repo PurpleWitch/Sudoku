@@ -2,18 +2,22 @@ import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, ErrorHandler } from '@angular/core';
 import { AppComponent } from './app.component';
+import { Grid } from './ui/Grid/grid.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 @NgModule({
   bootstrap: [
-    IonicApp
+    AppComponent,
+    IonicApp,
+    Grid
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+    Grid
   ],
   entryComponents: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
