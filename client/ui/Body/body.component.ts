@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'an-grid',
-    templateUrl: './grid.component.html',
+    selector: 'an-body',
+    templateUrl: './body.component.html',
 })
 
-export class Grid {}
+export class Body {}

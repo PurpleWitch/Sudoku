@@ -4,6 +4,7 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { AppComponent } from './app.component';
 import { Grid } from './ui/Grid/grid.component';
 import { Navbar } from './ui/Navbar/nav.component';
+import { Body } from './ui/Body/body.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -14,8 +15,9 @@ import { FormsModule } from '@angular/forms';
   ],
   declarations: [
     AppComponent,
+    Navbar,
     Grid,
-    Navbar
+    Body
   ],
   entryComponents: [
     AppComponent,
