@@ -1,7 +1,11 @@
+import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, ErrorHandler } from '@angular/core';
 import { AppComponent } from './app.component';
 import { Grid } from './ui/Grid/grid.component';
+import { Navbar } from './ui/Navbar/nav.component';
+import { Body } from './ui/Body/body.component';
+import { Pad } from './ui/Pad/pad.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
@@ -12,7 +16,10 @@ import { FormsModule } from '@angular/forms';
   ],
   declarations: [
     AppComponent,
-    Grid
+    Navbar,
+    Grid,
+    Body,
+    Pad
   ],
   entryComponents: [
     AppComponent,

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'an-grid',
+    selector: 'ng-grid',
     templateUrl: './grid.component.html',
 })
 
