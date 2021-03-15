@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'an-body',
+    selector: 'ng-body',
     templateUrl: './body.component.html',
 })
 
