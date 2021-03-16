@@ -2,10 +2,10 @@
 ok!
 
 ## Init Tech Stack
-- mongoDB-atlas
+- mongo
 - meteor
-- typescript-angular
-- node.js
+- angularts
+- nodejs
 
 ## Team ##
 - Rami Okkeh
