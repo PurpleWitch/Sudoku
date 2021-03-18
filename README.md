@@ -1,5 +1,5 @@
 # Sudoku
-This is a clone of the famous game sudoku
+This is a clone of Sudoku
 
 ## Init Tech Stack
 - mongo
