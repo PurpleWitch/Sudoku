@@ -1,6 +1,8 @@
 .row{
     display:flex;
+    flex-flow: row;
 }
 .col{
     display:flex;
+    flex-flow: column;
 }
