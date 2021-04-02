@@ -2,9 +2,23 @@
     display:flex;
     flex-flow: row;
     align-items: center;
+    justify-content: center;
 }
 .col{
     display:flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
+}
+.block{
+    border: 3px solid green;
+}
+.top{
+    border-top: 5px solid lime;
+}
+.bottom{
+    border-bottom: 5px solid lime;
+}
+.left{
+    border-bottom: 5px solid lime;
 }
